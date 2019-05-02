@@ -12,10 +12,10 @@ function App() {
 		<div className="App">
 			<Navbar />
 			<Switch>
-				<Route exact path="/" component={VendingMachine} />
-				<Route exact path="/soda" component={Soda} />
-				<Route exact path="/chips" component={Chips} />
-				<Route exact path="/sardines" component={Sardines} />
+				<Route exact path="/" render={() => <VendingMachine />} />
+				<Route exact path="/soda" render={() => <Soda />} />
+				<Route exact path="/chips" render={() => <Chips />} />
+				<Route exact path="/sardines" render={() => <Sardines />} />
 			</Switch>
 		</div>
 	);
