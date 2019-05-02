@@ -1,11 +1,10 @@
 import React from 'react';
-import { Route, Switch } from 'react-router-dom';
 import Navbar from './Navbar';
 import VendingMachine from './VendingMachine';
 import Soda from './Soda';
 import Chips from './Chips';
 import Sardines from './Sardines';
-import './App.css';
+import { Route, Switch } from 'react-router-dom';
 
 function App() {
 	return (

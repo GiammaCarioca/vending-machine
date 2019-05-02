@@ -1,29 +1,27 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import Message from './Message';
 import './VendingMachine.css';
+import vendingMachineImg from './VendingMachine.png';
 
 export default class VendingMachine extends Component {
 	render() {
 		return (
-			<div>
-				<h1>Hello! I am a vending machine. What would you like to eat?</h1>
-				<ul>
-					<li>
-						<Link exact to="/soda">
-							Soda
-						</Link>
-					</li>
-					<li>
-						<Link exact to="/chips">
-							Chips
-						</Link>
-					</li>
-					<li>
-						<Link exact to="sardines">
-							Fresh Sardines
-						</Link>
-					</li>
-				</ul>
+			<div className="VendingMachine" style={{ backgroundImage: `url(${vendingMachineImg})` }}>
+				<Message>
+					<h1>hello i am a vending machine. what would you like to eat?</h1>
+				</Message>
+				<Message>
+					<h1>
+						<Link to="/soda">Soda</Link>
+					</h1>
+					<h1>
+						<Link to="/chips">Chips</Link>
+					</h1>
+					<h1>
+						<Link to="/sardines">Sardines</Link>
+					</h1>
+				</Message>
 			</div>
 		);
 	}
