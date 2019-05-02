@@ -4,7 +4,7 @@ import Message from './Message';
 import './VendingMachine.css';
 import vendingMachineImg from './VendingMachine.png';
 
-export default class VendingMachine extends Component {
+class VendingMachine extends Component {
 	render() {
 		return (
 			<div className="VendingMachine" style={{ backgroundImage: `url(${vendingMachineImg})` }}>
@@ -26,3 +26,5 @@ export default class VendingMachine extends Component {
 		);
 	}
 }
+
+export default VendingMachine;

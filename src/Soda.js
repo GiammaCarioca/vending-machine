@@ -4,7 +4,7 @@ import Message from './Message';
 import sodaImg from './Soda.png';
 import './Soda.css';
 
-export default class Soda extends Component {
+class Soda extends Component {
 	render() {
 		return (
 			<div className="Soda">
@@ -21,3 +21,5 @@ export default class Soda extends Component {
 		);
 	}
 }
+
+export default Soda;

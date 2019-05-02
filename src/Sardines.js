@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import Message from './Message';
 import './Sardines.css';
 
-export default class Sardines extends Component {
+class Sardines extends Component {
 	render() {
 		return (
 			<div
@@ -20,3 +20,5 @@ export default class Sardines extends Component {
 		);
 	}
 }
+
+export default Sardines;

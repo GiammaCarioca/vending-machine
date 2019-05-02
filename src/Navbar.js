@@ -2,7 +2,7 @@ import React, { Component, Fragment } from 'react';
 import { NavLink } from 'react-router-dom';
 import './Navbar.css';
 
-export default class Navbar extends Component {
+class Navbar extends Component {
 	render() {
 		return (
 			<Fragment>
@@ -27,3 +27,5 @@ export default class Navbar extends Component {
 		);
 	}
 }
+
+export default Navbar;

@@ -6,7 +6,7 @@ import chipsImg from './Chips.png';
 
 import './Chips.css';
 
-export default class Chips extends Component {
+class Chips extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {
@@ -48,3 +48,5 @@ export default class Chips extends Component {
 		);
 	}
 }
+
+export default Chips;
