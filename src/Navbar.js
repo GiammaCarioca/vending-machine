@@ -1,28 +1,29 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import { NavLink } from 'react-router-dom';
+import './Navbar.css';
 
 export default class Navbar extends Component {
 	render() {
 		return (
-			<div>
-				<nav className="App-nav">
-					<NavLink exact activeClassName="active-link" to="/">
+			<Fragment>
+				<nav className="Navbar">
+					<NavLink exact activeClassName="Navbar-active" to="/">
 						Home
 					</NavLink>
 
-					<NavLink exact activeClassName="active-link" to="/soda">
+					<NavLink exact activeClassName="Navbar-active" to="/soda">
 						Soda
 					</NavLink>
 
-					<NavLink exact activeClassName="active-link" to="/chips">
+					<NavLink exact activeClassName="Navbar-active" to="/chips">
 						Chips
 					</NavLink>
 
-					<NavLink exact activeClassName="active-link" to="/sardines">
+					<NavLink exact activeClassName="Navbar-active" to="/sardines">
 						Sardines
 					</NavLink>
 				</nav>
-			</div>
+			</Fragment>
 		);
 	}
 }
