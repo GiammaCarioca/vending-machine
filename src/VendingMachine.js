@@ -1,33 +1,27 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import './VendingMachine.css';
 
 export default class VendingMachine extends Component {
 	render() {
 		return (
 			<div>
-				<nav>
-					<ul>
-						<li>
-							<a href="#">Soda</a>
-						</li>
-						<li>
-							<a href="#">Chips</a>
-						</li>
-						<li>
-							<a href="#">Sardines</a>
-						</li>
-					</ul>
-				</nav>
 				<h1>Hello! I am a vending machine. What would you like to eat?</h1>
 				<ul>
 					<li>
-						<button>Soda</button>
+						<Link exact to="/soda">
+							Soda
+						</Link>
 					</li>
 					<li>
-						<button>Chips</button>
+						<Link exact to="/chips">
+							Chips
+						</Link>
 					</li>
 					<li>
-						<button>Fresh sardines</button>
+						<Link exact to="sardines">
+							Fresh Sardines
+						</Link>
 					</li>
 				</ul>
 			</div>
